@@ -14,40 +14,20 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img
-            src="./images/BenBryantLogo.PNG"
-            style="width: 250px"
-            class="mt-1"
-          />
-        </a>
+      <div class="navbar-brand"></div>
 
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-menu">
         <div class="navbar-end mr-2">
           <a class="navbar-item"> Home </a>
 
-          <a class="navbar-item"> Projects </a>
+          <a class="navbar-item" href=""> Experience </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
 
             <div class="navbar-dropdown">
               <a class="navbar-item"> About Me </a>
-              <a class="navbar-item"> Cool App </a>
+              <a class="navbar-item"> Lab </a>
               <a class="navbar-item"> Contact </a>
             </div>
           </div>
@@ -56,8 +36,162 @@
     </nav>
 
     <!-- Banner -->
-    <section id="banner"></section>
+    <div id="banner"></div>
 
     <!-- Welcome -->
+    <section class="section has-background-dark has-text-centered-touch">
+      <div class="content is-large">
+        <h1 class="has-text-danger-light">Hi I'm Ben, welcome to my page!</h1>
+        <h5 class="has-text-danger-light">
+          Here you will find everything pertaining to my developing career in
+          web development, with some personal touches hither and thither.
+        </h5>
+      </div>
+    </section>
+
+    <!-- Quick Blurbs -->
+    <div class="columns mt-2 is-gapless">
+      <div class="column is-one-third">
+        <div class="content has-text-centered">
+          <h2>A Glimpse</h2>
+          <h3>25 Years Old</h3>
+          <h3>Born and raised in Virginia</h3>
+          <h3>Love D&D, fighting games, my wife, and my cats</h3>
+          <h3>Huge sports nerd</h3>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="content has-text-centered">
+          <h2>Proficiencies</h2>
+          <h3>HTML <span> <img style="width:25px;" src="./images/html5-icon.png">
+          </span>/CSS <span> <img style="width:25px;" src="./images/css.png"></span></h3>
+          <h3>Bulma Framework <span> <img style="width:50px;" src="./images/bulma-logo.png"> </span></h3>
+          <h3>Bootstrap <span> <img style="width:25px;" src="./images/bootstrap-icon.png"> </span></h3>
+          <h3>JavaScript <span> <img style="width:22px;" src="./images/javascript-1.svg"> </span></h3>
+          <h3>Node.js <span> <img style="width:35px;" src="./images/Node-icon.png"> </span></h3>
+          <h3>API Integration</h3>
+        </div>
+      </div>
+      <div class="column mr-3"></div>
+      <div class="content has-text-centered">
+        <h2>Frequently Asked Questions</h2>
+        <h3>What is your biggest strength?</h3>
+        <h4>
+          I have a passion for development and a knack for solving logic
+          puzzles, making programming a natural fit for me.
+        </h4>
+        <h3>What is your biggest weakness?</h3>
+        <h4>
+          I have a difficult time with repetititious jobs, instead preferring to engage in new
+          challenges regularly.
+        </h4>
+        <h3>Why should we hire you?</h3>
+        <h4>
+          I believe that what I lack in experience, I make up for with effort
+          and a drive to continuously better both myself and my code. I'm also skilled at thinking critically
+          in a way that can provide a unique perspective for problem-solving and
+          ensuring customer satisfaction.
+        </h4>
+        <h3></h3>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="columns">
+
+      <!-- TIG Job -->
+      <div class="column is-3 ml-6">
+        <div class="card">
+          <header class="card-header">
+            <h2 class="card-header-title">Quality Assurance Technician</h2>
+            <button class="card-header-icon">
+              <figure class="image">
+              <img style="width:90px;" src="./images/tig.svg">
+              </figure>
+            </button>
+          </header>
+
+          <!-- Job Responsibilities -->
+          <div class="card-content">
+            <div class="content" style="overflow:hidden;">
+              <h4 class="is-underlined">Responsibilities</h4>
+              <ul>
+                <li>
+                  Repair customer devices &#40; laptops, tablets, and other
+                  portable electronics&#41;
+                </li>
+                <li>
+                  Ensure repairs that have
+                  been made are satisfactory, instructing the technician on how
+                  to fix the repair if deemed unsatisfactory
+                </li>
+                <li>Collaborate with team members and supervisors to prepare devices for delivery to customer</li>
+              </ul>
+
+              <!-- Clickable Model Info -->
+              <h4 class="is-underlined">Models</h4>
+              <figure class="image is-64x64 columns is-mobile my-0">
+                <img class="column is-clickable is-rounded mr-2" src="https://upload.wikimedia.org/wikipedia/commons/2/29/HP_New_Logo_2D.svg">
+                <img class="column is-clickable is-rounded mr-2" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg">
+                <img class="column is-clickable is-rounded mr-2" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Lenovo_logo_2015.svg">
+                <img class="column is-clickable is-rounded" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Acer_Logo.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filler column -->
+      <div class="column is-4">
+        <figure class="image">
+          <span class="spacer"></span>
+          <img src="./images/Arrow.png">
+        </figure>
+      </div>
+
+      <!-- FullStack Bootcamp -->
+      <div class="column is-3 mt-6 mb-0">
+        <div class="card">
+          <header class="card-header">
+            <h2 class="card-header-title">Full-Stack Developer Bootcamp</h2>
+            <button class="card-header-icon">
+              <figure class="image">
+              <img style="width:45px;" src="./images/shield_ur.svg">
+              </figure>
+            </button>
+          </header>
+
+          <!-- Applicable Skills -->
+          <div class="card-content">
+            <div class="content">
+              <h4 class="is-underlined">Applicable Skills</h4>
+              <ul>
+                <li>
+                  Build front-end websites from scratch, as well as using ready-made frameworks that enable you to build efficiently
+                </li>
+                <li>
+                  Create full-stack single-page web applications using RESTful API routes and AJAX methods, and describe how
+front-end applications communicate with back-end applications and databases.
+                </li>
+                <li>Implement structured and unstructured databases to convert static websites into dynamic websites that
+                  persist data.</li>
+                <li>Build communication skills and demonstrate the foundational computer-science knowledge that is required during
+                  technical interviews</li>
+                <li>Apply the accepted and standard basics of social coding—including source control, issue tracking,
+                  and functional feedback—as part of a development community, while building an application.</li>
+                <li>Demonstrate strong teamwork and project management skills as a collaborator and independent
+                  contributor during the development cycle of complex projects</li>
+              </ul>
+              <!-- Loading Bar -->
+              <h4 class="is-flex is-justify-content-center">Class Progress</h4>
+              <progress class="progress" value="40" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-7">Test</div>
+      <div class="column mb-6"> Test</div>
+    </div>
   </body>
 </html>

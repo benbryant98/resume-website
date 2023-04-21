@@ -6,3 +6,29 @@
   background-position: center 15%;
   background-size: cover;
 }
+
+.navbar-brand {
+  background: url("../images/BenBryantLogo.png") no-repeat center center;
+  height: 60px;
+  background-size: cover;
+  width: 260px;
+}
+
+.is-clickable:hover {
+  opacity: 0.5;
+}
+
+.is-clickable {
+  background-color: rgb(213, 213, 216);
+}
+
+.move-down {
+  bottom: -40px;
+}
+
+.spacer {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-bottom: 30%;
+}
