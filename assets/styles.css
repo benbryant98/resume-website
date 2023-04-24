@@ -1,12 +1,4 @@
-#banner {
-  background-image: url("../images/HanoverTavernWedding-141.jpg");
-  width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center 15%;
-  background-size: cover;
-}
-
+/* Custom Navbar Image */
 .navbar-brand {
   background: url("../images/BenBryantLogo.png") no-repeat center center;
   height: 60px;
@@ -14,21 +6,163 @@
   width: 260px;
 }
 
+/* Photo Banner */
+#banner {
+  background-image: url("../images/HanoverTavernWedding-141.jpg");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  background-size: cover;
+  border-bottom: 0.3rem solid darkorchid;
+}
+
+/* Animated Header */
+.typewriter {
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  transform: translateY(20%);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 70px;
+  font-family: SemiCoder;
+  animation: typewriter 4s steps(35);
+}
+
+/* Typewriter Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Quick Blurbs Background */
+.blurbs {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/darkness.png");
+  background-repeat: repeat;
+  border-bottom: 0.3rem solid darkorchid;
+}
+
+/* Quick Blurbs Headers */
+.blurbs h2 {
+  font-family: MonsterSouth;
+  color: rgb(202, 200, 200);
+  font-size: 50px;
+}
+
+.glimpse h3 {
+  color: white;
+  font-family: DataControl;
+  font-size: 28px;
+  margin-left: 3%;
+}
+
+.proficiencies h3 {
+  font-family: BubblePixel;
+  color: white;
+  font-size: 25px;
+}
+
+.faq h3 {
+  font-family: BubblePixel;
+  color: darkorchid;
+  padding-bottom: 6px;
+}
+
+.faq h4 {
+  font-size: 25px;
+  font-family: DataControl;
+  color: floralwhite;
+  margin-right: 3%;
+}
+
+/* Hover "Animation" */
 .is-clickable:hover {
   opacity: 0.5;
 }
 
-.is-clickable {
-  background-color: rgb(213, 213, 216);
+.image .is-clickable {
+  background-color: rgb(230, 158, 252);
 }
 
-.move-down {
-  bottom: -40px;
+/* Experience Section Spacing */
+.exp-spacer-cl2 {
+  display: inline-block;
+  margin-bottom: 300px;
 }
 
-.spacer {
+.exp-spacer-cl3 {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-bottom: 30%;
+  margin-bottom: 87%;
+}
+
+.move-right-cl2 {
+  margin-left: 40px;
+}
+
+/* Experience Section Background */
+.exp-background {
+  padding-top: 15px;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+  background-repeat: repeat;
+}
+
+/* Experience Title Aside */
+.exp-title {
+  background-image: url("../images/dark-honeycomb.png");
+  background-repeat: repeat;
+  border: 4px solid rgb(202, 3, 202);
+  box-shadow: 0 0 10px fuchsia;
+  font-size: 78px;
+  font-family: ParkTechLight;
+  color: fuchsia;
+  text-shadow: 0 2px 6px fuchsia;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+/* Card Styling */
+.card {
+  border: 2px solid rgb(22, 14, 139);
+  background-color: rgb(241, 95, 222);
+  border-radius: 0.5rem;
+  color: rgb(22, 14, 139);
+}
+
+.card-header {
+  background-color: darkorchid;
+  font-size: 25px;
+  font-family: DataControl;
+}
+
+/* Fonts */
+@font-face {
+  font-family: ParkTechLight;
+  src: url("../fonts/Park\ Tech\ CG\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MonsterSouth;
+  src: url("../fonts/Monster\ of\ South\ hollow\ St.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: BubblePixel;
+  src: url("../fonts/bubble_pixel-7_dark.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SemiCoder;
+  src: url("../fonts/Semi-Coder-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DataControl;
+  src: url("../fonts/data-latin.ttf") format("truetype");
 }

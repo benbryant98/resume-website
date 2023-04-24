@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benjamin Bryant</title>
     <link
       rel="stylesheet"
@@ -39,41 +39,61 @@
     <div id="banner"></div>
 
     <!-- Welcome -->
-    <section class="section has-background-dark has-text-centered-touch">
-      <div class="content is-large">
-        <h1 class="has-text-danger-light">Hi I'm Ben, welcome to my page!</h1>
-        <h5 class="has-text-danger-light">
-          Here you will find everything pertaining to my developing career in
-          web development, with some personal touches hither and thither.
-        </h5>
+    <section class="section has-text-centered-touch" style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/darkness.png');
+    background-repeat: repeat;">
+      <div class="content is-large" >
+        <h2 class="typewriter" style="font-size:70px;color:darkorchid;"><span style="color:white;">&#60;</span> Hi I'm Ben, welcome to my page! <span style="color:white;">/&#62;</span></h2>
       </div>
     </section>
 
     <!-- Quick Blurbs -->
-    <div class="columns mt-2 is-gapless">
+    <div class="columns blurbs">
       <div class="column is-one-third">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered glimpse">
           <h2>A Glimpse</h2>
           <h3>25 Years Old</h3>
-          <h3>Born and raised in Virginia</h3>
-          <h3>Love D&D, fighting games, my wife, and my cats</h3>
-          <h3>Huge sports nerd</h3>
+          <h3>From Sandston, Virginia</h3>
+          <h3>Love Tabletop Roleplay, Fighting Games, Cats, and Sports </h3>
+          <h3>Passionate About Environmental Conservation, Cooking, and Animal Rights</h3>
+          <h3>Life Goal to Try Every Spicy Chicken Sandwich in Existence</h3>
         </div>
       </div>
       <div class="column is-one-quarter">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered proficiencies">
           <h2>Proficiencies</h2>
-          <h3>HTML <span> <img style="width:25px;" src="./images/html5-icon.png">
-          </span>/CSS <span> <img style="width:25px;" src="./images/css.png"></span></h3>
-          <h3>Bulma Framework <span> <img style="width:50px;" src="./images/bulma-logo.png"> </span></h3>
-          <h3>Bootstrap <span> <img style="width:25px;" src="./images/bootstrap-icon.png"> </span></h3>
-          <h3>JavaScript <span> <img style="width:22px;" src="./images/javascript-1.svg"> </span></h3>
-          <h3>Node.js <span> <img style="width:35px;" src="./images/Node-icon.png"> </span></h3>
+          <h3>HTML 
+            <span> 
+              <img style="width:25px;" src="./images/html5-icon.png">
+          </span>/CSS 
+          <span> 
+            <img style="width:25px;" src="./images/css.png">
+          </span>
+        </h3>
+          <h3>Bulma Framework 
+            <span> 
+              <img style="width:60px;background-color: rgb(206, 199, 190, 0.5);" src="./images/bulma-logo.png"> 
+            </span>
+          </h3>
+          <h3>Bootstrap 
+            <span> 
+              <img style="width:30px;" src="./images/bootstrap-icon.png"> 
+            </span>
+          </h3>
+          <h3>JavaScript 
+            <span> 
+              <img style="width:22px;" src="./images/javascript-1.svg"> 
+            </span>
+          </h3>
+          <h3>Node.js 
+            <span> 
+              <img style="width:40px;" src="./images/Node-icon.png"> 
+            </span>
+          </h3>
           <h3>API Integration</h3>
         </div>
       </div>
       <div class="column mr-3"></div>
-      <div class="content has-text-centered">
+      <div class="content has-text-centered faq">
         <h2>Frequently Asked Questions</h2>
         <h3>What is your biggest strength?</h3>
         <h4>
@@ -97,13 +117,18 @@
     </div>
 
     <!-- Experience -->
-    <div class="columns">
+    <div class="columns exp-background">
 
-      <!-- TIG Job -->
-      <div class="column is-3 ml-6">
+      <!-- Column 1 -->
+      <div class="column is-1 exp-title has-text-centered">
+        <h1>E</h1>
+        <h1>X</h1><h1>P</h1><h1>E</h1><h1>R</h1><h1>I</h1><h1>E</h1><h1>N</h1><h1>C</h1><h1>E</h1>
+      </div>
+      <!-- TIG Job / Column 2 -->
+      <div class="column is-4 ml-6">
         <div class="card">
           <header class="card-header">
-            <h2 class="card-header-title">Quality Assurance Technician</h2>
+            <h2 class="card-header-title has-text-black">Quality Assurance Technician</h2>
             <button class="card-header-icon">
               <figure class="image">
               <img style="width:90px;" src="./images/tig.svg">
@@ -137,14 +162,45 @@
                 <img class="column is-clickable is-rounded" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Acer_Logo.svg">
             </div>
           </div>
+          <footer class="card-footer">
+            <p class="card-footer-item"><span class="mr-2 has-text-link-dark">Started</span> April 2021</p>
+            <p class="card-footer-item"><span class="mr-2 has-text-danger-dark">Ended</span> December 2022</p>
+          </footer>
+        </div>
+
+        <!-- Span to separate elements -->
+        <span class="exp-spacer-cl2"></span>
+
+        <!-- Could Be You -->
+        <div class="card move-right-cl2">
+          <header class="card-header">
+            <h2 class="card-header-title is-flex is-justify-content-center has-text-black">Your Business Name Here</h2>
+          </header>
+
+          <!-- Job Responsibilities -->
+          <div class="card-content">
+            <div class="content" style="overflow:hidden;">
+              <h4 class="is-underlined">What You're Looking For</h4>
+              <ul>
+                <li>
+                  An up and coming developer with a passion for crafting front-end solutions that work within a scalable microservices-based environment
+                </li>
+                <li>
+                  Someone who can identify and implement improvements to data quality, reliability, and efficiency
+                </li>
+                <li>An inquisitive learner who enjoys expanding their knowledge about computer science as a whole</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Filler column -->
-      <div class="column is-4">
+      <!-- Column 3 -->
+      <div class="column is-3">
         <figure class="image">
-          <span class="spacer"></span>
-          <img src="./images/Arrow.png">
+          <span class="exp-spacer-cl3"></span>
+          <!-- Animated Arrows -->
+          <img src="./images/ArrowFinal.gif" style="opacity: 0.8;">
         </figure>
       </div>
 
@@ -152,7 +208,7 @@
       <div class="column is-3 mt-6 mb-0">
         <div class="card">
           <header class="card-header">
-            <h2 class="card-header-title">Full-Stack Developer Bootcamp</h2>
+            <h2 class="card-header-title has-text-black">Full-Stack Developer Bootcamp</h2>
             <button class="card-header-icon">
               <figure class="image">
               <img style="width:45px;" src="./images/shield_ur.svg">
@@ -188,10 +244,6 @@ front-end applications communicate with back-end applications and databases.
           </div>
         </div>
       </div>
-    </div>
-    <div class="columns">
-      <div class="column is-7">Test</div>
-      <div class="column mb-6"> Test</div>
     </div>
   </body>
 </html>
