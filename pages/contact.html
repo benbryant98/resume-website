@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <link href="../assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="../assets/css/solid.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand"></div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end mr-2">
+          <a class="navbar-item" href="../index.html"> Home </a>
+
+          <a class="navbar-item" href="../index.html?#experience">
+            Experience
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./about-me.html"> About Me </a>
+              <a class="navbar-item"> Lab </a>
+              <a class="navbar-item"> Contact </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="columns pt-6">
+      <div class="column is-3"></div>
+      <div class="column is-6">
+        <header class="pb-4 has-text-centered">
+          <h1 class="title">Contact Me</h1>
+        </header>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Rodrigo Borgia" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email Address</label>
+          <div class="control has-icons-left">
+            <input
+              class="input"
+              type="email"
+              placeholder="borgiapope@hotmail.net"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Job Opportunity</option>
+                <option>Lab Questions</option>
+                <option>Just Saying Hey</option>
+                <option>Report a Bug</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              placeholder="Your message here..."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
