@@ -80,6 +80,11 @@
   margin-right: 3%;
 }
 
+.tig-position {
+  top: 80px;
+  left: 37px;
+}
+
 /* Hover "Animation" */
 .is-clickable:hover {
   opacity: 0.5;
@@ -87,6 +92,14 @@
 
 .image .is-clickable {
   background-color: rgb(230, 158, 252);
+}
+
+.ml-6 {
+  left: 200px;
+}
+
+.card-footer {
+  border-color: rgb(22, 14, 139);
 }
 
 /* Experience Section Spacing */
@@ -102,8 +115,17 @@
   margin-bottom: 15%;
 }
 
+.exp-spacer-gif {
+  display: inline-block;
+  margin-bottom: 400px;
+}
+
+.bootcamp {
+  right: 20px;
+}
+
 .move-right-cl2 {
-  margin-left: 40px;
+  left: 40px;
 }
 
 /* Experience Section Background */
@@ -127,20 +149,65 @@
   border-bottom-right-radius: 5rem;
 }
 
-/* Card Styling */
-.card {
+/* Experience Card Styling */
+.exp-card {
   border: 2px solid rgb(22, 14, 139);
   background-color: rgb(241, 95, 222);
   border-radius: 0.5rem;
   color: rgb(22, 14, 139);
 }
 
-.card-header {
+.exp-card .card-header {
   background-color: darkorchid;
   font-size: 25px;
   font-family: DataControl;
 }
 
+/* Modal Styling */
+.exit {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  background-color: red;
+  border-radius: 0.15rem 0.45rem;
+}
+
+.panel-background {
+  background-color: rgb(53, 54, 54);
+}
+
+.panel-block {
+  color: white;
+}
+
+.panel-tabs a:hover {
+  color: aqua;
+  background-color: rgb(230, 158, 252, 0.2);
+}
+
+.model-img {
+  height: 270px;
+}
+
+.model-card {
+  background-color: white;
+  width: 110%;
+}
+
+#model-exit {
+  position: absolute;
+  background-color: red;
+  z-index: 1;
+  right: -1px;
+  top: -2px;
+  border-radius: 0.15rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .no-touch {
+    visibility: hidden;
+  }
+}
 /* Fonts */
 @font-face {
   font-family: ParkTechLight;

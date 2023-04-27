@@ -124,13 +124,13 @@
     <div class="columns exp-background" id="experience">
 
       <!-- Column 1 -->
-      <div class="column is-1 exp-title has-text-centered">
+      <div class="column is-1 exp-title has-text-centered no-touch">
         <h1>E</h1>
         <h1>X</h1><h1>P</h1><h1>E</h1><h1>R</h1><h1>I</h1><h1>E</h1><h1>N</h1><h1>C</h1><h1>E</h1>
       </div>
       <!-- TIG Job / Column 2 -->
       <div class="column is-4 ml-6">
-        <div class="card">
+        <div class="card tig-position exp-card">
           <header class="card-header">
             <h2 class="card-header-title has-text-black">Quality Assurance Technician</h2>
             <button class="card-header-icon">
@@ -142,11 +142,11 @@
 
           <!-- Job Responsibilities -->
           <div class="card-content">
-            <div class="content" style="overflow:hidden;">
+            <div class="content is-flex is-flex-direction-column is-justify-content-center" style="overflow:hidden;">
               <h4 class="is-underlined">Responsibilities</h4>
               <ul>
                 <li>
-                  Repair customer devices &#40; laptops, tablets, and other
+                  Repair customer devices &#40;laptops, tablets, and other
                   portable electronics&#41;
                 </li>
                 <li>
@@ -158,7 +158,7 @@
               </ul>
 
               <!-- Clickable Model Info -->
-              <h4 class="is-underlined">Models</h4>
+              <h4 class="is-underlined has-text-centered">Models</h4>
               <figure class="image is-64x64 columns is-mobile my-0 repair-models">
                 <img 
                 class="column is-clickable is-rounded mr-2" 
@@ -183,21 +183,21 @@
             </div>
           </div>
           <footer class="card-footer">
-            <p class="card-footer-item"><span class="mr-2 has-text-link-dark">Started</span> April 2021</p>
-            <p class="card-footer-item"><span class="mr-2 has-text-danger-dark">Ended</span> December 2022</p>
+            <p class="card-footer-item has-background-success"><span class="mr-2 has-text-black">Started</span> April 2021</p>
+            <p class="card-footer-item has-background-danger"><span class="mr-2 has-text-black">Ended</span> December 2022</p>
           </footer>
         </div>
 
         <!-- Span to separate elements -->
-        <span class="exp-spacer-cl2"></span>
+        <span class="exp-spacer-cl2 no-touch"></span>
 
         <!-- Could Be You -->
-        <div class="card move-right-cl2">
+        <div class="card move-right-cl2 exp-card">
           <header class="card-header">
             <h2 class="card-header-title is-flex is-justify-content-center has-text-black">Your Business Name Here</h2>
           </header>
 
-          <!-- Job Responsibilities -->
+          <!-- Looking For -->
           <div class="card-content">
             <div class="content" style="overflow:hidden;">
               <h4 class="is-underlined">What You're Looking For</h4>
@@ -216,17 +216,19 @@
       </div>
 
       <!-- Column 3 -->
-      <div class="column is-3">
+      <div class="column is-3 no-touch">
         <figure class="image">
           <span class="exp-spacer-cl3"></span>
           <!-- Animated Arrows -->
-          <img src="./images/ArrowTopFinal.gif" style="opacity: 0.8;">
+          <img src="./images/ArrowTopFinal.gif" style="opacity: 0.8;height:275px;">
+          <span class="exp-spacer-gif"></span>
+          <img src="./images/ArrowBotFinal.gif" style="opacity: 0.8;height:200px;">
         </figure>
       </div>
 
       <!-- FullStack Bootcamp -->
       <div class="column is-3 mt-6 mb-0">
-        <div class="card">
+        <div class="card bootcamp exp-card">
           <header class="card-header">
             <h2 class="card-header-title has-text-black">Full-Stack Developer Bootcamp</h2>
             <button class="card-header-icon">
@@ -266,36 +268,56 @@ front-end applications communicate with back-end applications and databases.
       </div>
     </div>
 
-    <!-- Modals -->
+  <!-- Modals -->
+
+    <!-- Main Repair Models Modal -->
     <div class="modal" id="repair-modal">
       <div class="modal-background"></div>
-      <button id="exit" class="delete model-close is-large" aria-label="close"></button>
+      
       <div class="modal-content">
-      <nav class="panel has-background-link">
-        <p class="panel-heading">
-        </p>
-        <div class="panel-block">
-        <p class="control has-icons-left">
-        <input class="input" type="text" placeholder="Search model">
-        <span class="icon is-left">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        </span>
-        </p>
-        </div>
-        <p class="panel-tabs">
-        <a class="is-active">All</a>
-        <a>test</a>
-        <a>test</a>
-        <a>test</a>
-        <a>test</a>
-        </p>
-        <a class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-laptop"></i>
-          </span>test
-        </a>
-        </div>
+        <nav class="panel panel-background">
+          <p class="panel-heading has-icons-right">
+          </p>
+          <button class="exit delete modal-close is-large" aria-label="close"></button>
+
+          <!-- Search Bar will be used when more models are added -->
+          <!-- <div class="panel-block">
+            <p class="control has-icons-left">
+              <input class="input" type="text" placeholder="Search model">
+              <span class="icon is-left">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </span>
+            </p>
+          </div> -->
+
         </nav>
+    </div>
+
+    <!-- Specific Model Modal -->
+    <div class="modal" id="model-modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="columns">
+          <div class="card model-card">
+            <div class="column">
+              <div class="card-image">
+              <button id="model-exit" class="delete modal-close is-large" aria-label="close"></button>
+              <figure class="image">
+                <image class="model-img" src=""></image>
+              </figure>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card-image">
+              <figure class="image">
+                <image class="model-specs" src=""></image>
+              </figure>
+            </div>
+          </div> 
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
