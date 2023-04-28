@@ -1,6 +1,3 @@
-html {
-  overflow: hidden;
-}
 
 body {
   background-image: url("/images/dark-honeycomb.png");
@@ -23,6 +20,10 @@ body {
 .options-card:hover {
   border: 2px solid blue;
   border-radius: 0.5rem;
+}
+
+.is-multiline .card {
+    width: 400px;
 }
 
 #hobbies {
@@ -49,6 +50,10 @@ body {
   margin-left: 2px;
   padding: 2px;
   background-color: slategray;
+}
+
+#hobbies figure {
+    height: 350px;
 }
 
 #hobbies h2 {
