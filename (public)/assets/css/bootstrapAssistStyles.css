@@ -1,0 +1,49 @@
+.navbar-brand img {
+  width: 240px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 2rem;
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.form-check-input:checked {
+  background-color: rgb(8, 8, 36);
+  border-color: rgb(27, 25, 148);
+}
+
+
+
+.col-4 p,
+.col-3 p {
+  font-size: 20px;
+  font-family: SongforJennifer;
+}
+
+.col-3 p {
+  font-size: 25px;
+}
+
+#headingOne img {
+  width: 90px;
+  background-color: rgba(2, 2, 2, 0.6);
+  border-radius: 0.7rem;
+  padding: 9px;
+}
+
+.accordion-header button {
+  font-size: 24px;
+  font-variant: small-caps;
+}
+
+@font-face {
+  font-family: SongforJennifer;
+  src: url("../../fonts/a\ song\ for\ jennifer.ttf") format("truetype");
+}
